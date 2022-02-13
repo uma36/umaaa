@@ -1,0 +1,27 @@
+name=input('enter name of customer:')
+phno=int(input('enter mobile number:'))
+bpq=int(input('enter biscuit packets:'))
+spq=int(input('enter soap packets:'))
+mpq=int(input('enter milk packets:'))
+rpq=int(input('enter rice bags:'))
+opq=int(input('enter oil packets:'))
+bp=50
+sp=30
+mp=28
+rp=900
+op=125
+bill=(bp*bpq)+(sp*spq)+(mp*mpq)+(rp*rpq)+(op*opq)
+if bill>5000:
+    dis=bill/100*10
+if bill>3000:
+    dis=bill/100*8
+if bill>2000:
+    dis=bill/100*5
+if bill>1000:
+    dis=bill/100*3
+if bill>3000:
+    tax=bill/100*10
+else:
+    tax=bill/100*18
+mainbill = bill - dis + tax
+print('bill amount:',mainbill)
